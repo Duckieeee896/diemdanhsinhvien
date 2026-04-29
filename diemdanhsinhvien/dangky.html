@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Tài khoản</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-bg">
+    <div class="login-box animate-fade-in-up">
+        <h2>Tạo tài khoản mới</h2>
+        <p>Điền đầy đủ thông tin để quản lý lớp học</p>
+        <form id="register-form">
+            <div class="input-group">
+                <label>Tên đăng nhập (Email)</label>
+                <input type="email" id="reg-username" placeholder="Ví dụ: thaykhoa@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label>Mật khẩu</label>
+                <input type="password" id="reg-password" placeholder="Ít nhất 6 ký tự" required>
+            </div>
+            <div class="input-group">
+                <label>Họ và Tên</label>
+                <input type="text" id="reg-fullname" placeholder="Ví dụ: Nguyễn Văn A" required>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <div class="input-group" style="flex: 1;">
+                    <label>Ngày sinh</label>
+                    <input type="date" id="reg-dob" required>
+                </div>
+                <div class="input-group" style="flex: 1;">
+                    <label>Lớp</label>
+                    <input type="text" id="reg-class" placeholder="Ví dụ: DH25PM" required>
+                </div>
+            </div>
+            
+            <div id="reg-message" class="error-text" style="text-align: center; margin-bottom: 15px; min-height: 20px;"></div>
+            
+            <div style="display: flex; justify-content: center;">
+                <button type="submit" class="btn-success" style="width: 200px; height: 45px; border-radius: 30px; display: flex; justify-content: center; align-items: center; margin: 0; padding: 0;">Đăng Ký</button>
+            </div>
+            
+            <p style="text-align: center; margin-top: 20px; margin-bottom: 0;">
+                Đã có tài khoản? <a href="dangnhap.html" style="color: #3498db; font-weight: bold; text-decoration: none;">Đăng nhập</a>
+            </p>
+        </form>
+    </div>
+
+    <script type="module" src="js/dangky.js"></script>
+</body>
+</html>
